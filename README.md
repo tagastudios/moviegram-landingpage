@@ -3,8 +3,8 @@ MovieGram!
 
 Autores:
 
--Rafael Irigoyen
--Jibrail Tannous
--Jibran Tannous
--Odarlis Perez
--Jose Tannous
+	-Rafael Irigoyen
+	-Jibrail Tannous
+	-Jibran Tannous
+	-Odarlis Perez
+	-Jose Tannous
