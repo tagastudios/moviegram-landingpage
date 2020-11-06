@@ -1,5 +1,5 @@
 Pagina Web - Landing Page
-MovieGram!
+<br/><h1>MovieGram!</h1>
 
 Autores:
 
