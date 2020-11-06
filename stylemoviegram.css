@@ -1,0 +1,218 @@
+:root {
+  --color1: rgb(97, 67, 133);
+  --color2: linear-gradient(
+    0deg,
+    rgba(97, 67, 133, 1) 0%,
+    rgba(5, 22, 53, 1) 100%
+  );
+
+  --color3: rgb(255, 255, 255);
+  --color4: linear-gradient(
+    0deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(170, 7, 107, 1) 100%
+  );
+}
+
+.navegador {
+  background-color: #614385;
+  display: flex;
+}
+.navegador__nav {
+  list-style: none;
+  display: flex;
+  justify-content: flex-end;
+  flex: 1;
+  width: 50vw;
+  margin-right: 200px;
+}
+.navegador__nav li {
+  margin-left: 50px;
+}
+
+.navegador__nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+}
+
+.navegador p {
+  font-family: "Sansita Swashed", cursive;
+  color: white;
+  text-shadow: 3px 3px #aa076b;
+  font-size: 30px;
+  margin: 0;
+  margin-left: 60px;
+}
+.navegador__nav li a:hover {
+  background: var(--color3);
+  background: var(--color4);
+  color: #051635;
+  font-weight: bold;
+  border-radius: 200px;
+  padding: 5px;
+  margin: -5px 0px;
+}
+
+.navegador__botonlogin {
+  background: #aa076b;
+  border-radius: 200px;
+  border: white 2px solid;
+  font-weight: bold;
+  margin: -7px 0px;
+  padding: 2px 0px 2px 10px !important;
+}
+
+.navegador__botonlogin a:hover {
+  background: var(--color3);
+  background: var(--color4);
+  color: #051635;
+  font-weight: bold;
+  border-radius: 200px;
+  margin: -5px 0px;
+}
+
+.material-icons.md-36 {
+  padding-left: 30px;
+  font-size: 35px;
+  margin: -5px -5px -5px 0px;
+}
+
+body,
+html {
+  margin: -2px 0px;
+}
+
+.seccion4 {
+  background: var(--color1);
+  background: var(--color2);
+  display: flex;
+}
+
+.seccion4__celular img {
+  height: 550px;
+  padding: 34px 50px 19px 50px;
+}
+
+.seccion4__celular-fondo {
+  background: url(imagenes/backgroundcel.png);
+  background-repeat: no-repeat;
+  background-size: 250px;
+  position: relative;
+  background-position: 50% 45%;
+}
+
+.seccion4__celular-caratula {
+  z-index: 1;
+  position: relative;
+}
+
+.seccion4__celular-fondo2 {
+  position: absolute;
+  top: -115px;
+  left: 170px;
+  width: 270px;
+  object-fit: contain;
+}
+
+.seccion4__celular {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.seccion4__celular-chatjose {
+  position: absolute;
+  top: 350px;
+  left: 300px;
+  color: white;
+  list-style: none;
+}
+
+.seccion4__celular-letranombre {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 10px;
+  list-style: none;
+}
+
+.seccion4__celular-botonchat1 {
+  background: #aa076b;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  list-style: none;
+}
+.seccion4__celular-botonchat2 {
+  background: #aa076b;
+  border-radius: 10px;
+  font-size: 10px;
+  list-style: none;
+}
+
+.seccion4__celular-chatodar {
+  position: absolute;
+  top: 70%;
+  left: 37%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+
+.seccion4__celular-botonchat3 {
+  background: #051635;
+  border-radius: 90px;
+  margin-bottom: 10px;
+  font-size: 10px;
+  list-style: none;
+}
+
+.seccion4__celular-botonchat4 {
+  background: #051635;
+  border-radius: 90px;
+  font-size: 10px;
+  list-style: none;
+}
+
+.seccion4__celular-letranombre1 {
+  font-family: "Sansita Swashed", cursive;
+  font-size: 10px;
+  list-style: none;
+  margin-top: 150px;
+}
+.seccion4__celular-botonchat5 {
+  background: #aa076b;
+  border-radius: 10px;
+  font-size: 10px;
+  list-style: none;
+  margin-top: 10px;
+}
+
+.seccion4__texto h2 {
+  font-family: "Sansita Swashed", cursive;
+  color: #dd9cc4;
+  font-size: 40px;
+  text-align: center;
+}
+.seccion4__texto p {
+  font-family: "Montserrat", sans-serif;
+  color: white;
+}
+.seccion4__texto p i {
+  color: #dd9cc4;
+}
+
+.seccion4__texto {
+  display: flex;
+  align-items: center;
+  padding-right: 170px;
+}
+
+.seccion4__hipervinculo {
+  list-style: none;
+  display: flex;
+}
+.seccion4__hipervinculo li a {
+  color: #dd9cc4;
+  display: flex;
+}
