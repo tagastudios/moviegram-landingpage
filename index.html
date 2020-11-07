@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/152be3fb17.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <title>Moviegram</title>
+</head>
+<body>
+    <!-- LOGIN CONTENT -->
+    <input type="checkbox" id="loginCheckbox">
+    <div class="loginBlack">
+        <div class="loginContent">
+            <label for="loginCheckbox" class="loginClose">&times;</label>
+            <div class="loginHeader">
+                <h2>Login</h2>
+            </div>
+            <form class="loginForm" action="">
+                <label class="loginUserName" for="userName">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="userName" placeholder="Username" required/>
+                </label>
+                <label class="loginUserPassword" for="userPassword">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="userPassword" placeholder="Password" required/>
+                </label>
+                <input class="loginUserSubmit" type="submit" value="Login">
+                <a href="" class="loginUserResetPassword">I forgot my password</a>
+            </form>
+            <div class="loginFooter">
+                <a href="">No account? Create one now!</a>
+            </div>
+        </div>
+    </div>
+    <!-- ----------- -->
+    <!-- MENU MOBILE -->
+    <div id="page-mysidebar" class="page-sidebar">
+        <a class="page-sidebar__closebuttom" href="javascript:void(0)" onclick="closeNav()">×</a>
+        <a href="">Home</a>
+        <a href="">Movies</a>
+        <a href="">Series</a>
+        <a href="">Chat</a>
+        <a href="">More</a>
+        <a href="">Login</a>
+    </div>
+    <!-- ----------- -->
+    <header class="page-header">
+        <div class="page-header__logobox">
+            <a class="page-header__logolink" href=""><h1 class="page-header__logotitle">Moviegram</h1></a>
+        </div>
+        <nav class="page-header__navbox">
+            <ul class="page-header__navlist">
+                <li class="page-header__navitem"><a class="page-header__navlink" href="">Home</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="">Movies</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="">Series</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="">Chat</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="">More</a></li>
+            </ul>
+            <label for="loginCheckbox" class="page-header__buttonlogin">
+                <span>Login</span>
+                <i class="fas fa-user-circle fa-user-circle-size"></i>
+            </label>
+            <!-- BOTON DE ABRIR MENU MOBILE -->
+            <a class="page-header__sidebar-openbuttom" onclick="openNav()">☰ Menu</a>
+            <!-- -------------------------- -->
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="page-main__section">
+            <div class="page-main__laptopbox">
+                <figure class="page-main__laptopfigure">
+                    <img class="page-main__laptopimg" src="img/laptop-the-avengers-compress.png" alt="Laptop">
+                </figure>
+            </div>
+            <div class="page-main__infobox">
+                <h1 class="page-main__infotitle">
+                    The best movies are here!
+                </h1>
+                <div class="page-main__linebox">
+                    <div class="page-main__line"></div>
+                </div>
+                <p class="page-main__infodescription">
+                    Gather your family for the best movie experiences, we are an online group of movies aficionado! 
+                    Our mission is simple: Making a movie & series related community which you feel part of. We specialize at:
+                </p>
+                <ul class="page-main__infolist">
+                    <li class="page-main__infoitem page-main__infoitem--icon1"> Fastest search engine for movies.</li>
+                    <li class="page-main__infoitem page-main__infoitem--icon2"> New movies & series every day from a great collection.</li>
+                    <li class="page-main__infoitem page-main__infoitem--icon3"> High definition & high quality for every video.</li>
+                    <li class="page-main__infoitem page-main__infoitem--icon4"> The best global entertainment community every.</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <!-- SCRIPT MENU MOBILE -->
+    <script src="js/sidebar.js" type="text/javascript"></script>
+    <!-- ------------------ -->
+</body>
+</html>
