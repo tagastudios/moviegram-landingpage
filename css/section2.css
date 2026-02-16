@@ -1,0 +1,196 @@
+#seccion2 {
+    background: linear-gradient(180deg, rgb(95, 0, 95) 0%, rgb(75, 5, 85) 50%, rgb(60, 10, 75) 100%);
+    padding: 60px clamp(1rem, 4vw, 2rem);
+    overflow-x: hidden;
+}
+
+#seccion2 .page-main__section {
+    padding: 10px;
+}
+
+#seccion2 .page-main__laptopbox {
+    width: 40%;
+    float: left;
+}
+
+#seccion2 .page-main__laptopfigure {
+    margin-left: 0;
+    margin-top: 30px;
+    animation-name: laptop-opacity;
+    animation-delay: 0s;
+    animation-duration: 4s;
+}
+
+@keyframes laptop-opacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#seccion2 .page-main__laptopimg {
+    width: 100%;
+    max-width: 100%;
+    filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.4));
+    transition: filter 0.3s ease;
+}
+
+#seccion2 .page-main__laptopfigure:hover .page-main__laptopimg {
+    filter: drop-shadow(0 24px 48px rgba(0, 0, 0, 0.5));
+}
+
+#seccion2 .page-main__infobox {
+    width: 60%;
+    float: left;
+    padding: 15px;
+    animation-name: infobox-opacity;
+    animation-delay: 0s;
+    animation-duration: 3s;
+}
+
+@keyframes infobox-opacity {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+#seccion2 .page-main__infotitle {
+    font-family: var(--font-display);
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.85);
+    color: #ffffff;
+    font-size: var(--heading-md);
+    text-align: center;
+    padding: 30px 10px 10px 10px;
+}
+
+#seccion2 .page-main__linebox {
+    display: flex;
+    justify-content: center;
+}
+
+#seccion2 .page-main__line {
+    width: min(400px, 90%);
+    border-bottom: 5px solid rgb(161, 0, 108);
+    animation-name: line-growth;
+    animation-delay: 0s;
+    animation-duration: 2s;
+}
+
+@keyframes line-growth {
+    from { width: 0px; }
+    to { width: 400px; }
+}
+
+#seccion2 .page-main__infodescription {
+    color: #ffffff;
+    text-align: justify;
+    padding: 40px 30px 10px 30px;
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+}
+
+#seccion2 .page-main__infolist {
+    color: #ffffff;
+    list-style: none;
+    padding: 40px 10px 10px 10px;
+}
+
+#seccion2 .page-main__infoitem {
+    padding: 10px;
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+}
+
+#seccion2 .page-main__infoitem--icon1:before {
+    content: "\f002";
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    width: 1.5em;
+    color: rgb(161, 0, 108);
+}
+
+#seccion2 .page-main__infoitem--icon2:before {
+    content: "\f073";
+    font-family: FontAwesome;
+    font-size: 20px;
+    display: inline-block;
+    width: 1.5em;
+    color: rgb(161, 0, 108);
+}
+
+#seccion2 .page-main__infoitem--icon3:before {
+    content: "\f26c";
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 1.8em;
+    color: rgb(161, 0, 108);
+}
+
+#seccion2 .page-main__infoitem--icon4:before {
+    content: "\f500";
+    font-family: FontAwesome;
+    display: inline-block;
+    width: 1.8em;
+    color: rgb(161, 0, 108);
+}
+
+/* Responsive section2 */
+@media only screen and (max-width: 1000px) {
+    #seccion2 .page-main__section {
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+    #seccion2 .page-main__infobox {
+        float: none;
+        width: 100%;
+    }
+    #seccion2 .page-main__infotitle {
+        font-size: var(--heading-sm);
+        padding: 10px;
+    }
+    #seccion2 .page-main__laptopbox {
+        float: none;
+        width: 100%;
+        max-width: 100%;
+    }
+    #seccion2 .page-main__laptopfigure {
+        margin-left: 0;
+        margin-top: 0;
+        display: flex;
+        justify-content: center;
+    }
+    #seccion2 .page-main__laptopimg {
+        width: 90%;
+        max-width: 450px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    #seccion2 .page-main__line {
+        width: min(300px, 85%);
+    }
+    #seccion2 .page-main__infotitle {
+        font-size: var(--heading-sm);
+    }
+    @keyframes line-growth {
+        from { width: 0px; }
+        to { width: 300px; }
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    #seccion2 .page-main__infotitle {
+        font-size: var(--text-2xl);
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    #seccion2 .page-main__infotitle {
+        font-size: var(--text-xl);
+    }
+    #seccion2 .page-main__line {
+        width: min(250px, 80%);
+    }
+    @keyframes line-growth {
+        from { width: 0px; }
+        to { width: 250px; }
+    }
+}

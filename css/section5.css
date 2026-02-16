@@ -1,0 +1,138 @@
+#seccion5.seccion5 {
+    background-color: #614385;
+    color: #ffffff;
+    min-height: 80vh;
+    padding: 50px clamp(1rem, 4vw, 2rem);
+    display: flex;
+    flex-wrap: wrap-reverse;
+    justify-content: space-around;
+    align-items: center;
+    overflow-x: hidden;
+    /* Override container to make section full-width (no white border) */
+    max-width: none;
+    width: 100%;
+}
+
+#seccion5 .seccion5__texto {
+    max-width: 500px;
+}
+
+#seccion5 .seccion5__texto h2 {
+    margin: 0 0 32px 0;
+    font-family: var(--font-display);
+    font-size: var(--heading-md);
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+#seccion5 .seccion5__texto div {
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+    transition: transform 0.2s ease;
+    font-family: var(--font-body);
+    font-size: var(--text-lg);
+}
+
+#seccion5 .seccion5__texto div:hover {
+    transform: translateX(6px);
+}
+
+#seccion5 .seccion5__texto div i {
+    margin-right: 12px;
+    color: #dd9cc4;
+    font-size: 1.2em;
+}
+
+/* Laptop mockup (seccion5) */
+#seccion5 .seccion5__laptop {
+    margin: 0 auto 50px;
+    width: min(500px, 95vw);
+    max-width: 100%;
+}
+
+#seccion5 .mockup {
+    display: inline-block;
+    position: relative;
+    z-index: 3;
+    text-align: center;
+    font-size: 0;
+    perspective: 2400px;
+    perspective-origin: 50% 100%;
+    opacity: 0;
+    transition: 500ms opacity;
+}
+
+#seccion5 .mockup.loaded {
+    opacity: 1;
+}
+
+#seccion5 .mockup .part .top,
+#seccion5 .mockup .part .bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#seccion5 .mockup .part.top {
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+#seccion5 .mockup .part.top2 {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+#seccion5 .mockup:hover .part.top {
+    transform: translate3d(0, 0, 0) rotateX(0deg);
+}
+
+#seccion5 .mockup .part {
+    display: inline-block;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transform-origin: 50% 100%;
+    transition: 900ms;
+}
+
+#seccion5 .mockup.opened .part .top {
+    transform: translate3d(0, 0, -11px) rotateX(90deg) scale(1, 1);
+}
+
+#seccion5 .mockup .part .top {
+    transform-origin: 50% 0;
+    transform: translate3d(0, 0, -11px) rotateX(90deg);
+    transition: 900ms;
+}
+
+#seccion5 .mockup img {
+    display: block;
+    max-width: 100%;
+    backface-visibility: hidden;
+}
+
+#seccion5 .mockup .part .cover {
+    position: relative;
+}
+
+#seccion5 .mockup video {
+    display: block;
+    position: absolute;
+    top: 8%;
+    left: 4%;
+    width: 92%;
+    border-radius: 6px;
+    backface-visibility: hidden;
+    transform: translate3d(0, 0, 1px);
+}
+
+#seccion5 .mockup .part.bottom {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transform: translate3d(0, 0, 0) rotateX(-90deg);
+}
+
+#seccion5 .mockup .part .bottom {
+    transform-origin: 50% 0;
+    transform: translate3d(0, 0, 0) rotateX(90deg);
+}

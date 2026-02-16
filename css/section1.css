@@ -1,0 +1,186 @@
+#seccion1 {
+    background: rgb(5,22,53);
+    background: linear-gradient(180deg, rgba(5,22,53,1) 0%, rgba(98,6,95,1) 100%);
+    overflow-x: hidden;
+}
+
+#seccion1 .contenedor {
+    background: rgb(5,22,53);
+    background: linear-gradient(180deg, rgba(5,22,53,1) 0%, rgba(98,6,95,1) 100%);
+    width: 100%;
+    max-width: 100%;
+    min-height: 100vh;
+    padding: 20px 16px 40px;
+    overflow-x: hidden;
+}
+
+#seccion1 .part1 {
+    text-align: center;
+    padding-top: 40px;
+}
+
+#seccion1 .part1 h1 {
+    font-family: var(--font-display);
+    color: white;
+    text-shadow: 4px 4px 0 rgba(170, 7, 107, 0.4);
+    font-size: var(--heading-lg);
+}
+
+#seccion1 .part1 h4 {
+    font-family: var(--font-body);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: var(--text-xl);
+    font-weight: 300;
+    letter-spacing: 0.05em;
+    margin-top: 128px;
+}
+
+#seccion1 .carrusel {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: min(90vw, 1100px);
+    max-width: 100%;
+    margin: 0 auto;
+    height: auto;
+    background: linear-gradient(135deg, rgba(97, 67, 133, 0.5) 0%, rgba(170, 7, 107, 0.3) 100%);
+    backdrop-filter: blur(8px);
+    border: 2px solid rgba(170, 7, 107, 0.6);
+    border-radius: 80px;
+    padding: 24px 16px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+}
+
+#seccion1 .Carrusel__Fotos {
+    width: 84%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#seccion1 .Carrusel__Foto {
+    width: 16.3%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transition: transform 0.35s ease, box-shadow 0.35s ease;
+    object-fit: cover;
+}
+
+#seccion1 .Carrusel__Fotos:hover img:not(:hover) {
+    opacity: 0.6;
+}
+
+#seccion1 .Carrusel__Foto:hover {
+    transform: scale(1.2);
+    z-index: 100;
+    box-shadow: 0 16px 40px rgba(0, 0, 0, 0.5), 0 0 0 3px rgba(170, 7, 107, 0.5);
+}
+
+#seccion1 .Fechita {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 8%;
+    min-width: 32px;
+    font-family: var(--font-body);
+    color: #AA076B;
+    text-shadow: 2px 1px #614385;
+    font-size: clamp(2rem, 8vw, 5rem);
+}
+
+#seccion1 .Fechita:hover {
+    transition: 0.5s;
+    transform: scale(1.5);
+}
+
+#seccion1 .espacio {
+    position: absolute;
+    width: 0;
+    height: 0;
+    overflow: hidden;
+    font-size: 0;
+    line-height: 0;
+    color: transparent;
+    user-select: none;
+    pointer-events: none;
+}
+
+#seccion1 .carrusel h3 {
+    font-family: var(--font-display);
+    color: white;
+    text-shadow: 5px 5px 5px #AA076B;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: -2.5rem;
+    font-size: var(--text-2xl);
+    white-space: nowrap;
+    margin-top: -64px;
+}
+
+/* Animations */
+#seccion1 .contenedor h1 {
+    animation: bounceIn;
+    animation-duration: 1.5s;
+}
+
+#seccion1 .contenedor h4 {
+    animation: backInLeft;
+    animation-duration: 1.5s;
+}
+
+#seccion1 .contenedor h3 {
+    animation: bounceIn;
+    animation-duration: 1.5s;
+}
+
+#seccion1 .carrusel {
+    animation: fadeIn;
+    animation-duration: 1.5s;
+}
+
+/* Responsive */
+@media screen and (max-width: 1024px) {
+    /* section 1 responsive adjustments */
+}
+
+@media screen and (max-width: 780px) {
+    /* section 1 responsive adjustments */
+}
+
+@media screen and (max-width: 480px) {
+    #seccion1 .Carrusel__Foto:nth-child(3),
+    #seccion1 .Carrusel__Foto:nth-child(4),
+    #seccion1 .Carrusel__Foto:nth-child(5) {
+        display: none;
+    }
+
+    #seccion1 .Carrusel__Foto {
+        width: 32%;
+        height: auto;
+    }
+
+    #seccion1 .Fechita {
+        width: 8%;
+        min-width: 28px;
+    }
+
+    #seccion1 .carrusel {
+        border-radius: 40px;
+        margin-top: 50px;
+        width: 95vw;
+    }
+
+    #seccion1 .part1 h1 {
+        font-size: var(--heading-md);
+    }
+
+    #seccion1 .part1 h4 {
+        font-size: var(--text-lg);
+    }
+
+    #seccion1 .carrusel h3 {
+        font-size: var(--text-xl);
+    }
+}

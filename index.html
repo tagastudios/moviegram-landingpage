@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moviegram</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;700&family=Sansita+Swashed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/ad25b40ca4.js" crossorigin="anonymous"></script>
+
+    <!-- Animate.css (for section1) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/section1.css">
+    <link rel="stylesheet" href="css/section2.css">
+    <link rel="stylesheet" href="css/section3.css">
+    <link rel="stylesheet" href="css/section4.css">
+    <link rel="stylesheet" href="css/section5.css">
+</head>
+<body>
+    <!-- LOGIN MODAL (from seccion2) -->
+    <input type="checkbox" id="loginCheckbox">
+    <div class="loginBlack">
+        <div class="loginContent">
+            <label for="loginCheckbox" class="loginClose" aria-label="Close">×</label>
+            <div class="loginHeader">
+                <h2>Login</h2>
+            </div>
+            <form class="loginForm" action="">
+                <label class="loginUserName" for="userName">
+                    <i class="fas fa-user"></i>
+                    <input type="text" id="userName" placeholder="Username" required/>
+                </label>
+                <label class="loginUserPassword" for="userPassword">
+                    <i class="fas fa-lock"></i>
+                    <input type="password" id="userPassword" placeholder="Password" required/>
+                </label>
+                <input class="loginUserSubmit" type="submit" value="Login">
+                <a href="" class="loginUserResetPassword">I forgot my password</a>
+            </form>
+            <div class="loginFooter">
+                <a href="">No account? Create one now!</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- MENU MOBILE (from seccion2) -->
+    <div id="page-mysidebar" class="page-sidebar">
+        <a class="page-sidebar__closebuttom" href="javascript:void(0)" onclick="closeNav()">×</a>
+        <a href="#seccion1">Home</a>
+        <a href="#seccion2">Movies</a>
+        <a href="#seccion3">Series</a>
+        <a href="#seccion4">Chat</a>
+        <a href="#seccion5">More</a>
+        <a href="javascript:void(0)" onclick="document.getElementById('loginCheckbox').checked=true; closeNav();">Login</a>
+    </div>
+
+    <!-- HEADER (from seccion2, with anchor links) -->
+    <header class="page-header">
+        <div class="page-header__logobox">
+            <a class="page-header__logolink" href="#seccion1"><h1 class="page-header__logotitle">Moviegram</h1></a>
+        </div>
+        <nav class="page-header__navbox">
+            <ul class="page-header__navlist">
+                <li class="page-header__navitem"><a class="page-header__navlink" href="#seccion1">Home</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="#seccion2">Movies</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="#seccion3">Series</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="#seccion4">Chat</a></li>
+                <li class="page-header__navitem"><a class="page-header__navlink" href="#seccion5">More</a></li>
+            </ul>
+            <label for="loginCheckbox" class="page-header__buttonlogin">
+                <span>Login</span>
+                <i class="fas fa-user-circle fa-user-circle-size"></i>
+            </label>
+            <a class="page-header__sidebar-openbuttom" onclick="openNav()">☰ Menu</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- SECCION 1: Hero + Carousel -->
+        <section id="seccion1">
+            <div class="contenedor">
+                <div class="part1">
+                    <h1>Moviegram</h1>
+                    <h4>Chat, Watch, Never look back</h4>
+                </div>
+                <div class="carrusel">
+                    <div class="espacio" aria-hidden="true"></div>
+                    <h3>New Movies</h3>
+                    <div class="Fechita">&lt;</div>
+                    <div class="Carrusel__Fotos">
+                        <img class="Carrusel__Foto" src="img/posters/poster1.png" alt="Poster 1">
+                        <img class="Carrusel__Foto" src="img/posters/poster2.png" alt="Poster 2">
+                        <img class="Carrusel__Foto" src="img/posters/poster6.png" alt="Poster 6">
+                        <img class="Carrusel__Foto" src="img/posters/poster7.png" alt="Poster 7">
+                        <img class="Carrusel__Foto" src="img/posters/poster5.png" alt="Poster 5">
+                        <img class="Carrusel__Foto" src="img/posters/poster9.png" alt="Poster 9">
+                    </div>
+                    <div class="Fechita">&gt;</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 2: Movies + Laptop -->
+        <section id="seccion2">
+            <div class="page-main__section">
+                <div class="page-main__laptopbox">
+                    <figure class="page-main__laptopfigure">
+                        <img class="page-main__laptopimg" src="img/laptop/laptop-the-avengers-compress.png" alt="Laptop">
+                    </figure>
+                </div>
+                <div class="page-main__infobox">
+                    <h1 class="page-main__infotitle">The best movies are here!</h1>
+                    <div class="page-main__linebox">
+                        <div class="page-main__line"></div>
+                    </div>
+                    <p class="page-main__infodescription">
+                        Gather your family for the best movie experiences, we are an online group of movies aficionado!
+                        Our mission is simple: Making a movie & series related community which you feel part of. We specialize at:
+                    </p>
+                    <ul class="page-main__infolist">
+                        <li class="page-main__infoitem page-main__infoitem--icon1"> Fastest search engine for movies.</li>
+                        <li class="page-main__infoitem page-main__infoitem--icon2"> New movies & series every day from a great collection.</li>
+                        <li class="page-main__infoitem page-main__infoitem--icon3"> High definition & high quality for every video.</li>
+                        <li class="page-main__infoitem page-main__infoitem--icon4"> The best global entertainment community every.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 3: Series -->
+        <section id="seccion3">
+            <div class="section__series__general">
+                <div class="section__series">
+                    <h1 class="section__series-title">Serie? We've got you!</h1>
+                    <p class="section__series-p">Grab some popcorn and binge all the seasons of your favorite series. We've got from the classics to the just released best series of the world. With continues updated every season to make sure you're always caught up!</p>
+                </div>
+                <div class="section__lista">
+                    <ul class="section__lista-ul">
+                        <li><i class="fas fa-search icon-search"></i>Fastest search engine for series and recommendations.</li>
+                        <li><i class="fas fa-calendar-alt icon-calendar"></i>New movies & series every day from a great collection.</li>
+                        <li><i class="fas fa-caret-square-right icon-video"></i>High definition & high quality for every video.</li>
+                        <li><i class="fas fa-user-friends icon-users"></i>The best global entertainment community every!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section__images">
+                <figure>
+                    <img class="section__images--1" src="img/series/01.png" alt="Series 1">
+                    <div class="image2">
+                        <img class="section__images--2" src="img/series/02.png" alt="Series 2">
+                    </div>
+                </figure>
+            </div>
+        </section>
+
+        <!-- SECCION 4: Chat -->
+        <section id="seccion4" class="seccion4">
+            <div class="seccion4__celular">
+                <div class="seccion4__celular-fondo">
+                    <img class="seccion4__celular-caratula" src="img/chat/celular.svg" alt="chat">
+                    <img class="seccion4__celular-fondo2" src="img/chat/backgroundcel2.png" alt="videochat">
+                </div>
+                <div class="seccion4__celular-chatjose">
+                    <ul>
+                        <li class="seccion4__celular-letranombre">Jose</li>
+                        <li class="seccion4__celular-botonchat1">Mi vida esta aplicación es genial!!</li>
+                        <li class="seccion4__celular-botonchat2">Te mostraré</li>
+                    </ul>
+                </div>
+                <div class="seccion4__celular-chatodar">
+                    <ul>
+                        <li class="seccion4__celular-letranombre">Odarlis</li>
+                        <li class="seccion4__celular-botonchat3">Me encanta!!</li>
+                        <li class="seccion4__celular-botonchat4">Comencemos</li>
+                    </ul>
+                </div>
+                <div class="seccion4__celular-chatjose">
+                    <ul>
+                        <li class="seccion4__celular-letranombre1">Jose</li>
+                        <li class="seccion4__celular-botonchat5">Jjajaja, Que buena peli!!</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="seccion4__texto">
+                <div>
+                    <h2>Buenas películas merecen<br>buena compañía :)</h2>
+                    <p>
+                        Nuestro chat a tiempo real te permitirá conversar y crear salas 1:1 o en grupo, para ver la misma película al mismo tiempo, y poder hablar de ella! Recuerda, una película es tan buena como tu compañía.
+                    </p>
+                    <ul class="seccion4__hipervinculo">
+                        <li><a href="#">Invita a tus amigos ahora!</a></li>
+                    </ul>
+                    <br>
+                    <p><i class="material-icons">search</i> Fastest search engine for series and recommendations.</p>
+                    <p><i class="material-icons">event_note</i> New movies & series every day from a great collection.</p>
+                    <p><i class="material-icons">hd</i> High definition & high quality for every video.</p>
+                    <p><i class="material-icons">people</i> The best global entertainment community every!</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECCION 5: More features -->
+        <section id="seccion5" class="seccion5 container">
+            <div class="seccion5__texto">
+                <h2>Y mucho mucho más!</h2>
+                <div>
+                    <i class="fas fa-search"></i>
+                    <p>Generador de meme de películas y series.</p>
+                </div>
+                <div>
+                    <i class="far fa-calendar-alt"></i>
+                    <p>Crear gif de 10 segundos de segmentos de video.</p>
+                </div>
+                <div>
+                    <i class="material-icons prefix" style="margin-left: -5px !important;">hd</i>
+                    <p>Debatir, calificar y sugerir mas y nuevas películas.</p>
+                </div>
+                <div>
+                    <i class="fas fa-user-friends"></i>
+                    <p>Mini-juegos, trivias, concurso y un sin fin de cosas!</p>
+                </div>
+            </div>
+            <div class="seccion5__laptop">
+                <div class="mockup mockup-macbook loaded opened">
+                    <div class="part top">
+                        <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-top.svg" alt="" class="top">
+                        <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+                        <video autoplay controls height="240px">
+                            <source src="https://srv-store5.gofile.io/download/PfceP7/Feliz%20cumplean%CC%83os%20Mi%20vida.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="part bottom">
+                        <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-cover.svg" alt="" class="cover">
+                        <img src="https://d1xm195wioio0k.cloudfront.net/images/mockup/macbook-bottom.svg" alt="" class="bottom">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- FOOTER (from seccion5) -->
+    <footer class="footer container">
+        <div class="footer__info">
+            <p>Suscribete y mantente informado de nuestras nuevas películas y series!</p>
+            <form action="submit">
+                <input type="email" class="footer__email" placeholder="Introduzca su email" name="email">
+                <button class="footer__boton">Enviar</button>
+            </form>
+        </div>
+        <div class="footer__copyright">
+            © 1996-2020 Videogram Venezuela. All Rights Reserved.
+        </div>
+    </footer>
+
+    <script src="js/sidebar.js"></script>
+    <script src="js/laptop.js"></script>
+</body>
+</html>
