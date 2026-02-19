@@ -21,6 +21,10 @@ Learning project from my first teaching session in 2020. A collaborative landing
 
 Collaborative building and Git—students learned to work together and use version control on a shared codebase.
 
+## License
+
+Designed by [Taga Studios](https://tagastudios.com).
+
 ## Authors
 
 - Rafael Irigoyen
